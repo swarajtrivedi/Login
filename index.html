@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Login Form</title>
-        <link href="./CSS/index.css" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
     </head>
     <body>
         <div id="inputbox">
@@ -30,7 +30,60 @@
                             </td>
                             <td>
                                 <label for="Password">Password</label><br>
-                                <input type="password" id="Password" name="Password" minlength="8" /> 
+                                <input type="password" pattern="^[A-Za-z0-9]{8,}$" 
+                                       id="Password" name="Password" 
+                                       title="Only Alphanumerical characters and Minimum Length of 8 characters"/> 
+                            </td>
+                        </tr>
+                    </table> 
+                    <br>
+                    <div id="subbutton"> <!--submit button-->
+                        <input id="submit" type="submit" value="Claim Your Free Trial  &#x25BA;" />      
+                    </div>
+                </form>
+            </div>
+            <br>
+            <footer> <!--terms and conditions-->
+                You are agreeing to our <a href="#">Terms and Services</a>
+            </footer>
+            
+        </div>
+    </body>
+</html><!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="inputbox">
+            <header> <!--heading-->
+                Get Started Today !
+            </header>
+            <div id="form">
+                <form>
+                    <table> <!--Form table-->
+                        <tr>
+                            <td>
+                                <label for="Fname">First Name</label><br>
+                                <input type="text" pattern="^[a-zA-Z]*$" id="Fname"  />
+                            </td>
+                            <td>
+                                <label for="Lname">Last Name</label><br>
+                                <input type="text" pattern="^[a-zA-Z]*$" id="Lname"  />                            
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                            <td>
+                                <label for="Email">Email address</label><br>
+                                <input type="email" id="Email" name="Email" />
+                            </td>
+                            <td>
+                                <label for="Password">Password</label><br>
+                                <input type="password" pattern="^[A-Za-z0-9]{8,}$" 
+                                       id="Password" name="Password" 
+                                       title="Only Alphanumerical characters and Minimum Length of 8 characters"/> 
                             </td>
                         </tr>
                     </table> 
